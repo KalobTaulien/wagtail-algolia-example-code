@@ -1,0 +1,8 @@
+{# search_page.html #}
+{% extends "base.html" %} {# Assumes your base file is in fact base.html #}
+
+{% block content %} {# Assumes your main content area is a block called 'content' #}
+  {% for result in results.hits %}
+    {{ result.title }}
+  {% endfor %}
+{% endcontent %}
